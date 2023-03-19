@@ -2,7 +2,7 @@
 //Task1. Задайте двумерный массив. 
 //Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 
-
+/*
 int[,] CreateRandom2DArray()
 {
   Console.Write("Input amount of rows: ");
@@ -30,6 +30,7 @@ void Show2DArray(int[,] array)
   }
   Console.WriteLine();
 }
+*/
 
 /*
 int[,] SorttheRow(int[,] array)
@@ -172,6 +173,17 @@ int[,] FillArraySpire(int n)
     num++;
   }
   return result;
+}
+
+void Show2DArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+      Console.Write(array[i, j].ToString("00") + " ");
+    Console.WriteLine();
+  }
+  Console.WriteLine();
 }
 
 Console.Write("Input size of the square matrix. n = ");
